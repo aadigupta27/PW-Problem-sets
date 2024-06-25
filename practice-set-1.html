@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set 1</title>
+    <link rel="stylesheet" href="practice-set-1.css">
+
+    <style>
+
+        /* if css properties are not mentioned in inline manner the external css properties have the uphand in preference 
+        hence removing css in inline results in changes mentioned in external.\
+            internal css is applied only if neither inline or external css is written as it comes with the least preference*/
+
+        .container{
+            background-color: black;
+
+            /* background color of the container doesnot apply in the webpage as inline css is preffered over internal css */
+
+        }
+
+        /* height mentioned in internal css is over powered by styling height property in external css */
+        /* height 200px is overpowering height 100px mentioned in internal css */
+
+        .set-1{
+            height : 100px;
+        }
+        .set-2{
+            height : 75px;
+        }
+        .set-3{
+            height : 50px;
+        }
+
+        /* external css offers the second preference over inline-css being the highly preferenced beating internal-css with least preference. */
+
+    </style>
+</head>
+<body>
+        <!-- changing css properties here, cannot get overwritten -->
+
+         <!-- background color given to the divs in inline css is the first to apply on the webpage -->
+
+    <div class="container" style="background-color: blueviolet;">
+        <div class="set-1" style="background-color: burlywood;">set-1</div>
+        <div class="set-2" style="background-color: aquamarine;">set-2</div>
+        <div class="set-3" style="background-color: rgb(28, 223, 44);">set-3</div>
+    </div>
+</body>
+</html>
